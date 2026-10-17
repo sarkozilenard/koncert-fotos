@@ -116,7 +116,7 @@ export function ContactForm() {
             value={fields.eventType}
             aria-invalid={Boolean(errors.eventType)}
             onChange={(event) => update("eventType", event.target.value)}
-            className="flex h-12 w-full rounded-md border border-line bg-white px-4 text-base text-ink outline-none focus-visible:border-blue focus-visible:ring-2 focus-visible:ring-blue/30"
+            className="flex h-12 w-full rounded-2xl border border-line bg-white px-4 text-base text-ink outline-none focus-visible:border-blue focus-visible:ring-2 focus-visible:ring-blue/30"
           >
             <option value="">Válassz típust</option>
             {eventTypes.map((type) => (
@@ -159,7 +159,7 @@ export function ContactForm() {
       </div>
 
       {sent ? (
-        <p className="rounded-md border border-blue/20 bg-white px-4 py-3 text-sm leading-6 text-navy" role="status">
+        <p className="rounded-2xl border border-blue/20 bg-mist px-4 py-3 text-sm leading-6 text-navy" role="status">
           Az üzenetvázlat megnyílt a leveleződben. Ha nem jelenik meg, írj közvetlenül a{" "}
           <a className="font-semibold text-blue" href={`mailto:${site.email}`}>
             {site.email}

@@ -6,7 +6,7 @@ export function SiteFooter() {
     <footer className="bg-navy text-white">
       <div className="mx-auto grid max-w-6xl gap-12 px-5 py-16 md:grid-cols-12 md:px-8">
         <div className="md:col-span-5">
-          <p className="font-serif text-4xl">{site.photographer}</p>
+          <p className="font-display text-4xl">{site.photographer}</p>
           <p className="mt-3 max-w-sm text-sm leading-6 text-white/70">
             Szegedi koncert- és eseményfotós. Élő fellépések, fesztiválok és
             rendezvények, amelyek később is átélhetők.

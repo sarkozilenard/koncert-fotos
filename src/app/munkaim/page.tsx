@@ -28,7 +28,7 @@ export default function WorkPage() {
           >
             <div className="mx-auto grid max-w-6xl items-center gap-8 px-5 py-14 md:px-8 md:py-20 lg:grid-cols-12">
               <div
-                className={`relative aspect-[4/5] overflow-hidden bg-navy lg:col-span-6 ${
+                className={`relative aspect-[4/5] overflow-hidden rounded-[1.75rem] bg-navy lg:col-span-6 ${
                   index % 2 === 1 ? "lg:order-2" : ""
                 }`}
               >
@@ -44,7 +44,7 @@ export default function WorkPage() {
                 <p className="text-[11px] font-semibold tracking-[0.22em] text-blue uppercase">
                   0{index + 1}
                 </p>
-                <h2 className="mt-3 font-serif text-4xl leading-tight text-navy">
+                <h2 className="mt-3 font-display text-4xl leading-tight text-navy">
                   {work.title}
                 </h2>
                 <p className="mt-5 text-lg leading-8 text-muted">{work.text}</p>
@@ -55,9 +55,9 @@ export default function WorkPage() {
       </div>
 
       <section className="mx-auto max-w-6xl px-5 py-16 md:px-8">
-        <div className="flex flex-col items-start justify-between gap-6 border border-line bg-white p-8 md:flex-row md:items-center">
+        <div className="flex flex-col items-start justify-between gap-6 rounded-[1.75rem] border border-line bg-white p-8 md:flex-row md:items-center">
           <div>
-            <h2 className="font-serif text-3xl text-navy">Nézd meg a képeket.</h2>
+            <h2 className="font-display text-3xl text-navy">Nézd meg a képeket.</h2>
             <p className="mt-2 text-muted">
               Válogatás koncertekről, fesztiválokról és különleges eseményekről.
             </p>

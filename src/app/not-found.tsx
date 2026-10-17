@@ -7,7 +7,7 @@ export default function NotFound() {
       <p className="text-[11px] font-semibold tracking-[0.22em] text-blue uppercase">
         404
       </p>
-      <h1 className="mt-3 font-serif text-5xl text-navy">Ez az oldal nincs a setlisten.</h1>
+      <h1 className="mt-3 font-display text-5xl text-navy">Ez az oldal nincs a setlisten.</h1>
       <p className="mt-4 text-lg text-muted">
         A keresett cím nem létezik. A galéria és a kapcsolat oldal viszont igen.
       </p>

@@ -42,8 +42,8 @@ export default function ContactPage() {
             Zenekaroknak, szervezőknek és magánügyfeleknek fotózom. Minél előbb írsz a dátumról és a helyszínről, annál biztosabban tudok ott lenni.
           </p>
         </aside>
-        <div className="border border-line bg-white p-6 md:p-8 lg:col-span-8">
-          <h2 className="font-serif text-3xl text-navy">Ajánlatkérés</h2>
+        <div className="rounded-[1.75rem] border border-line bg-white p-6 shadow-sm md:p-8 lg:col-span-8">
+          <h2 className="font-display text-3xl text-navy">Ajánlatkérés</h2>
           <p className="mt-2 mb-8 text-sm text-muted">
             A mezők kitöltése után a leveleződben nyílik meg a vázlat.
           </p>

@@ -2,14 +2,19 @@
 
 @theme inline {
   --font-sans: var(--font-manrope);
-  --font-serif: var(--font-fraunces);
-  --color-ink: #07111f;
-  --color-navy: #0c1b33;
-  --color-blue: #1f4fd8;
-  --color-mist: #f3f6fb;
-  --color-paper: #fbfcfe;
-  --color-line: #d7e0ec;
-  --color-muted: #52627a;
+  --font-display: var(--font-syne);
+  --color-ink: #10182b;
+  --color-navy: #121a33;
+  --color-blue: #2f6bff;
+  --color-mist: #f4f7ff;
+  --color-paper: #fbfcff;
+  --color-line: #e1e8f5;
+  --color-muted: #54627a;
+}
+
+.font-display {
+  font-weight: 700;
+  letter-spacing: -0.04em;
 }
 
 html {
@@ -24,11 +29,11 @@ body {
 }
 
 ::selection {
-  background: #1f4fd8;
+  background: #2f6bff;
   color: white;
 }
 
 :focus-visible {
-  outline: 2px solid #1f4fd8;
+  outline: 2px solid #2f6bff;
   outline-offset: 3px;
 }

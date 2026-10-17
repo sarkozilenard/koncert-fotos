@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Fraunces, Manrope } from "next/font/google";
+import { Manrope, Syne } from "next/font/google";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { site } from "@/lib/content";
@@ -10,9 +10,10 @@ const manrope = Manrope({
   variable: "--font-manrope",
 });
 
-const fraunces = Fraunces({
+const syne = Syne({
   subsets: ["latin", "latin-ext"],
-  variable: "--font-fraunces",
+  weight: ["600", "700", "800"],
+  variable: "--font-syne",
 });
 
 export const metadata: Metadata = {
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
     "eseményfotózás",
     "zenekari fotózás",
     "fesztivál fotó",
-    "Zénó Varga",
+    "Varga Zénó",
   ],
   openGraph: {
     title: `${site.name} · ${site.headline}`,
@@ -64,7 +65,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="hu" className={`${manrope.variable} ${fraunces.variable}`}>
+    <html lang="hu" className={`${manrope.variable} ${syne.variable}`}>
       <body className="antialiased">
         <a
           href="#tartalom"

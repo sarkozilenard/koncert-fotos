@@ -1,6 +1,6 @@
 # Koncert Fotós
 
-Zénó Varga szegedi koncert- és eseményfotós portfóliója. Letisztult, kék felület a fellépések, fesztiválok és rendezvények képeivel.
+Varga Zénó szegedi koncert- és eseményfotós portfóliója. Modern, fiatalos kék felület a fellépések, fesztiválok és rendezvények képeivel.
 
 ## Oldalak
 

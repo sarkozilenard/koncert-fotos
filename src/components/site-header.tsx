@@ -26,7 +26,7 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 border-b border-line bg-mist">
       <div className="mx-auto flex h-[4.5rem] max-w-6xl items-center justify-between px-5 md:px-8">
         <Link href="/" className="group flex items-baseline gap-3">
-          <span className="font-serif text-2xl leading-none tracking-tight text-navy">
+          <span className="font-display text-lg leading-none text-navy sm:text-2xl">
             {site.photographer}
           </span>
           <span className="hidden text-[11px] font-semibold tracking-[0.22em] text-blue uppercase sm:inline">
@@ -58,13 +58,13 @@ export function SiteHeader() {
         <div className="flex items-center gap-2">
           <Link
             href="/kapcsolat"
-            className="hidden h-10 items-center rounded-md bg-blue px-4 text-sm font-semibold text-white transition-colors hover:bg-[#183fb0] lg:inline-flex"
+            className="hidden h-10 items-center rounded-full bg-blue px-4 text-sm font-semibold text-white transition-colors hover:bg-[#2458e6] lg:inline-flex"
           >
             Kapcsolat
           </Link>
           <button
             type="button"
-            className="inline-flex size-11 items-center justify-center rounded-md text-navy lg:hidden"
+            className="inline-flex size-11 items-center justify-center rounded-full text-navy lg:hidden"
             aria-expanded={open}
             aria-controls="mobil-menu"
             onClick={() => setOpen((value) => !value)}
@@ -86,7 +86,7 @@ export function SiteHeader() {
                 key={item.href}
                 href={item.href}
                 className={cn(
-                  "border-b border-white/10 py-4 font-serif text-3xl",
+                  "border-b border-white/10 py-4 font-display text-3xl",
                   pathname === item.href && "text-sky-200",
                 )}
                 aria-current={pathname === item.href ? "page" : undefined}

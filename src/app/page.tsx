@@ -14,14 +14,15 @@ import {
 export default function HomePage() {
   return (
     <>
-      <section className="bg-navy text-white">
-        <div className="mx-auto grid max-w-6xl lg:min-h-[calc(100svh-4.5rem)] lg:grid-cols-2">
+      <section className="px-3 pt-3 md:px-6 md:pt-5">
+        <div className="mx-auto grid max-w-6xl overflow-hidden rounded-[1.75rem] bg-navy text-white shadow-[0_24px_60px_-32px_rgba(18,26,51,0.7)] lg:min-h-[calc(100svh-6.5rem)] lg:grid-cols-2">
           <div className="flex min-w-0 flex-col justify-between px-5 py-12 md:px-8 lg:py-16 lg:pr-12">
-            <p className="text-[11px] font-semibold tracking-[0.24em] text-sky-300 uppercase">
+            <p className="inline-flex w-fit items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-[11px] font-semibold tracking-[0.18em] text-sky-200 uppercase">
+              <span className="size-1.5 rounded-full bg-sky-300" />
               {site.city} · koncertfotós
             </p>
             <div className="mt-10 lg:mt-0">
-              <h1 className="font-serif text-[2.6rem] leading-[0.96] sm:text-5xl lg:text-[3.15rem] xl:text-[3.55rem]">
+              <h1 className="font-display text-[2rem] leading-[0.98] min-[400px]:text-[2.2rem] sm:text-[2.75rem] lg:text-[2.9rem] xl:text-[3.35rem]">
                 Felejthetetlen
                 <br />
                 pillanatok,
@@ -63,8 +64,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="border-b border-line bg-white">
-        <div className="mx-auto grid max-w-6xl sm:grid-cols-3">
+      <section>
+        <div className="mx-auto grid max-w-6xl gap-3 px-3 py-4 sm:grid-cols-3 md:px-6">
           {[
             ["Szeged és környéke", "Klubok, fesztiválok, szabadtéri esték"],
             ["Élő zene", "A színpad és a közönség egy képen"],
@@ -72,9 +73,9 @@ export default function HomePage() {
           ].map(([title, text]) => (
             <div
               key={title}
-              className="border-line px-5 py-8 md:px-8 sm:border-l sm:first:border-l-0"
+              className="rounded-3xl bg-white px-5 py-7 shadow-sm md:px-7"
             >
-              <p className="font-serif text-2xl text-navy">{title}</p>
+              <p className="font-display text-2xl text-navy">{title}</p>
               <p className="mt-2 text-sm leading-6 text-muted">{text}</p>
             </div>
           ))}
@@ -83,7 +84,7 @@ export default function HomePage() {
 
       <section className="mx-auto grid max-w-6xl items-center gap-10 px-5 py-20 md:px-8 md:py-28 lg:grid-cols-12">
         <div className="relative lg:col-span-7">
-          <div className="relative aspect-[4/3] overflow-hidden bg-navy">
+          <div className="relative aspect-[4/3] overflow-hidden rounded-[1.75rem] bg-navy">
             <Image
               src="/photos/fesztival.jpg"
               alt="Fesztiválközönség a színpad előtt, alkonyati fényben."
@@ -92,7 +93,7 @@ export default function HomePage() {
               className="object-cover"
             />
           </div>
-          <div className="absolute -bottom-6 left-6 hidden w-40 overflow-hidden border-4 border-mist bg-navy sm:block md:w-48">
+          <div className="absolute -bottom-6 left-6 hidden w-40 overflow-hidden rounded-3xl border-4 border-mist bg-navy sm:block md:w-48">
             <div className="relative aspect-[3/4]">
               <Image
                 src="/photos/lila.jpg"
@@ -108,7 +109,7 @@ export default function HomePage() {
           <p className="text-[11px] font-semibold tracking-[0.22em] text-blue uppercase">
             Rólam röviden
           </p>
-          <h2 className="mt-3 font-serif text-4xl leading-tight text-navy">
+          <h2 className="mt-3 font-display text-4xl leading-tight text-navy">
             A pillanat energiája, ne csak a dokumentum.
           </h2>
           <p className="mt-5 text-base leading-7 text-muted">{about.short}</p>
@@ -127,7 +128,7 @@ export default function HomePage() {
               <p className="text-[11px] font-semibold tracking-[0.22em] text-blue uppercase">
                 Szolgáltatások
               </p>
-              <h2 className="mt-3 max-w-xl font-serif text-4xl text-navy md:text-5xl">
+              <h2 className="mt-3 max-w-xl font-display text-4xl text-navy md:text-5xl">
                 Professzionális koncertfotózás Szegeden.
               </h2>
             </div>
@@ -141,10 +142,10 @@ export default function HomePage() {
                 key={service.num}
                 className="grid gap-6 py-8 md:grid-cols-12 md:items-center"
               >
-                <p className="font-serif text-3xl text-blue md:col-span-1">
+                <p className="font-display text-3xl text-blue md:col-span-1">
                   {service.num}
                 </p>
-                <h3 className="font-serif text-3xl text-navy md:col-span-5">
+                <h3 className="font-display text-3xl text-navy md:col-span-5">
                   {service.title}
                 </h3>
                 <p className="text-base leading-7 text-muted md:col-span-6">
@@ -162,7 +163,7 @@ export default function HomePage() {
             <p className="text-[11px] font-semibold tracking-[0.22em] text-blue uppercase">
               Válogatás
             </p>
-            <h2 className="mt-3 font-serif text-4xl text-navy md:text-5xl">
+            <h2 className="mt-3 font-display text-4xl text-navy md:text-5xl">
               Koncert- és eseményfotók
             </h2>
           </div>
@@ -180,7 +181,7 @@ export default function HomePage() {
           <p className="text-[11px] font-semibold tracking-[0.22em] text-sky-300 uppercase">
             Munkáim
           </p>
-          <h2 className="mt-3 max-w-2xl font-serif text-4xl md:text-5xl">
+          <h2 className="mt-3 max-w-2xl font-display text-4xl md:text-5xl">
             Négy hangulat, amiben otthon vagyok.
           </h2>
           <div className="mt-12 grid gap-6 md:grid-cols-2">
@@ -188,7 +189,7 @@ export default function HomePage() {
               <Link
                 key={work.title}
                 href="/munkaim"
-                className="group overflow-hidden bg-[#10233f]"
+                className="group overflow-hidden rounded-[1.75rem] bg-[#182240]"
               >
                 <div className="relative aspect-[4/5]">
                   <Image
@@ -200,7 +201,7 @@ export default function HomePage() {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="font-serif text-2xl">{work.title}</h3>
+                  <h3 className="font-display text-2xl">{work.title}</h3>
                   <p className="mt-2 text-sm leading-6 text-white/70">{work.text}</p>
                 </div>
               </Link>
@@ -210,9 +211,9 @@ export default function HomePage() {
       </section>
 
       <section className="mx-auto max-w-6xl px-5 py-20 md:px-8 md:py-28">
-        <div className="grid items-center gap-8 rounded-md bg-blue px-6 py-12 text-white md:grid-cols-12 md:px-12">
+        <div className="grid items-center gap-8 rounded-[1.75rem] bg-blue px-6 py-12 text-white shadow-[0_20px_50px_-28px_rgba(47,107,255,0.9)] md:grid-cols-12 md:px-12">
           <div className="md:col-span-8">
-            <h2 className="font-serif text-4xl leading-tight md:text-5xl">
+            <h2 className="font-display text-4xl leading-tight md:text-5xl">
               Ha szól a zene Szegeden, írj.
             </h2>
             <p className="mt-4 max-w-xl text-base leading-7 text-white/80">

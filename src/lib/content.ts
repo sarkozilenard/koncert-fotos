@@ -1,7 +1,7 @@
 export const site = {
   name: "Koncert Fotós",
-  photographer: "Zénó",
-  fullName: "Zénó Varga",
+  photographer: "Varga Zénó",
+  fullName: "Varga Zénó",
   role: "Koncert- és eseményfotós",
   city: "Szeged",
   area: "Szeged és környéke",

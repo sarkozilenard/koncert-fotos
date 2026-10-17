@@ -28,13 +28,13 @@ export default function ServicesPage() {
           >
             <div className="mx-auto grid max-w-6xl items-center gap-8 px-5 py-16 md:px-8 md:py-20 lg:grid-cols-2">
               <div className={index % 2 === 1 ? "lg:order-2" : undefined}>
-                <p className="font-serif text-4xl text-blue">{service.num}</p>
-                <h2 className="mt-3 font-serif text-4xl leading-tight text-navy">
+                <p className="font-display text-4xl text-blue">{service.num}</p>
+                <h2 className="mt-3 font-display text-4xl leading-tight text-navy">
                   {service.title}
                 </h2>
                 <p className="mt-5 text-lg leading-8 text-muted">{service.text}</p>
               </div>
-              <div className="relative aspect-[4/5] overflow-hidden bg-navy">
+              <div className="relative aspect-[4/5] overflow-hidden rounded-[1.75rem] bg-navy">
                 <Image
                   src={service.image.src}
                   alt={service.image.alt}
@@ -50,14 +50,14 @@ export default function ServicesPage() {
 
       <section className="bg-navy text-white">
         <div className="mx-auto max-w-6xl px-5 py-16 md:px-8 md:py-24">
-          <h2 className="font-serif text-4xl">Hogyan dolgozom</h2>
+          <h2 className="font-display text-4xl">Hogyan dolgozom</h2>
           <div className="mt-10 grid gap-8 md:grid-cols-3">
             {steps.map((step) => (
               <article key={step.num}>
                 <p className="text-sm font-semibold tracking-[0.2em] text-sky-300">
                   {step.num}
                 </p>
-                <h3 className="mt-3 font-serif text-2xl">{step.title}</h3>
+                <h3 className="mt-3 font-display text-2xl">{step.title}</h3>
                 <p className="mt-3 text-sm leading-6 text-white/70">{step.text}</p>
               </article>
             ))}

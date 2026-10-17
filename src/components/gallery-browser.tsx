@@ -76,7 +76,7 @@ export function GalleryBrowser({
               <button
                 type="button"
                 onClick={() => setActive(index)}
-                className="group relative block w-full overflow-hidden bg-navy text-left"
+                className="group relative block w-full overflow-hidden rounded-3xl bg-navy text-left"
                 aria-label={`${photo.title}. Nagyítás.`}
               >
                 <div
@@ -133,7 +133,7 @@ export function GalleryBrowser({
                 />
                 <div className="mt-4 flex w-full max-w-3xl items-end justify-between gap-4 text-white">
                   <div>
-                    <p className="font-serif text-2xl">{current.title}</p>
+                    <p className="font-display text-2xl">{current.title}</p>
                     <p className="mt-1 text-sm text-white/70">{current.caption}</p>
                   </div>
                   <p className="text-sm text-white/60">
