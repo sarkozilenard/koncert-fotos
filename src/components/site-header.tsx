@@ -44,8 +44,8 @@ export function SiteHeader() {
                   key={item.href}
                   href={item.href}
                   className={cn(
-                    "text-sm font-medium text-navy/80 transition-colors hover:text-blue",
-                    active && "text-blue",
+                    "relative text-sm font-medium text-navy/80 transition-colors hover:text-blue after:absolute after:inset-x-0 after:-bottom-1 after:h-0.5 after:origin-left after:scale-x-0 after:bg-blue after:transition-transform after:duration-300 hover:after:scale-x-100",
+                    active && "text-blue after:scale-x-100",
                   )}
                   aria-current={active ? "page" : undefined}
                 >

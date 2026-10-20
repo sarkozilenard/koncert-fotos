@@ -12,6 +12,13 @@ export const site = {
   lead: "Szegedi koncert- és eseményfotósként segítek megőrizni fellépéseid és rendezvényeid legintenzívebb pillanatait profi, hangulatos képeken, hogy újra és újra átélhessétek az élményt.",
 };
 
+export const portrait = {
+  src: "/photos/zeno.jpg",
+  alt: "Varga Zénó kék fényben, hátulról.",
+  width: 900,
+  height: 1600,
+};
+
 export const nav = [
   { href: "/", label: "Kezdőlap" },
   { href: "/rolam", label: "Rólam" },

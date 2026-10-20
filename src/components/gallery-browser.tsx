@@ -72,7 +72,11 @@ export function GalleryBrowser({
       ) : (
         <div className="columns-1 gap-4 sm:columns-2 lg:columns-3">
           {visible.map((photo, index) => (
-            <figure key={photo.src} className="mb-4 break-inside-avoid">
+            <figure
+              key={photo.src}
+              className="mb-4 break-inside-avoid animate-rise"
+              style={{ animationDelay: `${Math.min(index, 10) * 60}ms` }}
+            >
               <button
                 type="button"
                 onClick={() => setActive(index)}
