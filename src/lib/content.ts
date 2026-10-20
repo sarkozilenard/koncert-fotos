@@ -14,9 +14,9 @@ export const site = {
 
 export const portrait = {
   src: "/photos/zeno.jpg",
-  alt: "Varga Zénó kék fényben, hátulról.",
-  width: 900,
-  height: 1600,
+  alt: "Varga Zénó fekete-fehér portréja, a laptopja mellett.",
+  width: 1013,
+  height: 1800,
 };
 
 export const nav = [
@@ -28,19 +28,13 @@ export const nav = [
   { href: "/kapcsolat", label: "Kapcsolat" },
 ] as const;
 
-export type CategoryId =
-  | "koncert"
-  | "fesztival"
-  | "klub"
-  | "akusztikus"
-  | "esemeny";
+export type CategoryId = "koncert" | "fesztival" | "klub" | "esemeny";
 
 export const categories: { id: "osszes" | CategoryId; label: string }[] = [
   { id: "osszes", label: "Összes" },
   { id: "koncert", label: "Koncert" },
   { id: "fesztival", label: "Fesztivál" },
   { id: "klub", label: "Klub" },
-  { id: "akusztikus", label: "Akusztikus" },
   { id: "esemeny", label: "Esemény" },
 ];
 
@@ -56,97 +50,115 @@ export type Photo = {
 
 export const photos: Photo[] = [
   {
-    src: "/photos/byealex.jpg",
+    src: "/photos/feher-feny.jpg",
     alt: "Énekes a színpadon, fehér fénycsóvák előtt, mikrofonnal a kezében.",
     width: 1192,
     height: 1319,
     category: "koncert",
-    title: "ByeAlex",
+    title: "Fehér fény",
     caption: "Élő fellépés, színpadi fények",
   },
   {
-    src: "/photos/zold-szinpad.jpg",
+    src: "/photos/szinpad.jpg",
+    alt: "Énekes a színpad szélén, fehér és vörös fénycsóvák alatt.",
+    width: 1089,
+    height: 1444,
+    category: "koncert",
+    title: "A színpad szélén",
+    caption: "Teljes alak, élő koncert",
+  },
+  {
+    src: "/photos/zold-fenyek.jpg",
     alt: "Énekesnő zöld színpadi fényben, mikrofonnal, a dobos a háttérben.",
-    width: 1205,
-    height: 1600,
+    width: 1089,
+    height: 1445,
     category: "koncert",
     title: "Zöld fények",
     caption: "A pillanat energiája a színpadon",
   },
   {
-    src: "/photos/duett.jpg",
-    alt: "Két előadó együtt énekel vörös és rózsaszín színpadi fényben.",
-    width: 1206,
-    height: 1600,
+    src: "/photos/duett-hatulrol.jpg",
+    alt: "Két előadó együtt énekel vörös színpadi fényben, hátulról.",
+    width: 1279,
+    height: 1800,
     category: "koncert",
     title: "Duett",
-    caption: "Közös jelenet, vörös fény",
+    caption: "Közös jelenet a vörös fényben",
   },
   {
-    src: "/photos/mozgas.jpg",
-    alt: "Énekesnő mozgásban, zöld fénypászmák alatt a színpadon.",
-    width: 1124,
-    height: 1600,
+    src: "/photos/voros-feny.jpg",
+    alt: "Két előadó szemben a kamerával, vörös és rózsaszín színpadi fényben.",
+    width: 1357,
+    height: 1800,
+    category: "koncert",
+    title: "Vörös fény",
+    caption: "Duett, teljes energia",
+  },
+  {
+    src: "/photos/lendulet.jpg",
+    alt: "Énekes mozgásban, lila fényben, mikrofonnal a kezében.",
+    width: 1357,
+    height: 1800,
     category: "koncert",
     title: "Lendület",
     caption: "A mozdulat, ami megmarad",
   },
   {
-    src: "/photos/fesztival.jpg",
-    alt: "Szabadtéri fesztiválközönség a színpad előtt, kék ég alatt.",
-    width: 1600,
-    height: 1200,
-    category: "fesztival",
-    title: "A közönség soraiból",
-    caption: "Nyári fesztivál, Szeged és környéke",
-  },
-  {
-    src: "/photos/szabadteri.jpg",
+    src: "/photos/alkonyat.jpg",
     alt: "Énekesnő egy szabadtéri színpadon, narancssárga alkonyati fényben.",
-    width: 900,
-    height: 1600,
+    width: 1012,
+    height: 1800,
     category: "fesztival",
     title: "Alkonyati színpad",
     caption: "Szabadtéri fellépés",
   },
   {
-    src: "/photos/lezerek.jpg",
-    alt: "Éjszakai fesztivál, lézersugarak és három kivetítő a tömeg felett.",
-    width: 1200,
-    height: 1600,
+    src: "/photos/kozonseg.jpg",
+    alt: "Fesztiválközönség a zöld színpad előtt, kék ég alatt.",
+    width: 960,
+    height: 720,
     category: "fesztival",
-    title: "Éjszakai lézerek",
-    caption: "A fény és a tömeg együtt",
+    title: "A közönség soraiból",
+    caption: "Nyári fesztivál",
   },
   {
-    src: "/photos/szin.jpg",
-    alt: "Nagy fesztiválszínpad a SZIN-en, konfetti és a közönség sziluettje.",
-    width: 1020,
-    height: 574,
+    src: "/photos/szabadteri.jpg",
+    alt: "Énekesnő a szabadtéri színpadon, zöld fényben, a közönség előtt.",
+    width: 1170,
+    height: 867,
     category: "fesztival",
-    title: "SZIN",
-    caption: "Szabadtéri nagy színpad, Szeged",
+    title: "Szabadtéri színpad",
+    caption: "Fesztiválest, zöld fény",
   },
   {
-    src: "/photos/lila.jpg",
-    alt: "Énekes lila klubfényben, dobos a háttérben.",
-    width: 1205,
-    height: 1600,
+    src: "/photos/kek-hatter.jpg",
+    alt: "Előadó fekete sapkában, kék klubfényben, a színpad előtt.",
+    width: 1161,
+    height: 1355,
+    category: "klub",
+    title: "Kék háttér",
+    caption: "Klubkoncert, teljes jelenlét",
+  },
+  {
+    src: "/photos/lila-feny.jpg",
+    alt: "Előadó lila klubfényben, mikrofonnal, sapkában.",
+    width: 1088,
+    height: 1446,
     category: "klub",
     title: "Lila fény",
     caption: "Klubkoncert, teljes energia",
   },
   {
-    src: "/photos/klub-zold.jpg",
+    src: "/photos/zold-klub.jpg",
     alt: "Előadó zöld klubfényben, mikrofonnal, sapkában.",
-    width: 1205,
-    height: 1600,
+    width: 1088,
+    height: 1445,
     category: "klub",
-    title: "Klubfény",
+    title: "Zöld klubfény",
     caption: "Közeli, sötét terem",
   },
   {
-    src: "/photos/klub-meleg.jpg",
+    src: "/photos/meleg-feny.jpg",
     alt: "Két előadó meleg, narancssárga fényben egy klubszínpadon.",
     width: 1170,
     height: 1560,
@@ -155,28 +167,10 @@ export const photos: Photo[] = [
     caption: "Energikus klubpillanat",
   },
   {
-    src: "/photos/akusztik.jpg",
-    alt: "Akusztikus fellépés egy beltéri térben, a közönség telefonokkal veszi körül a színpadot.",
-    width: 1200,
-    height: 1600,
-    category: "akusztikus",
-    title: "Akusztikus közelség",
-    caption: "Előadó és közönség egy térben",
-  },
-  {
-    src: "/photos/plaza.jpg",
-    alt: "Háromtagú zenekar beltéri színpadon, a karzatokon álló közönséggel.",
-    width: 1600,
-    height: 900,
-    category: "esemeny",
-    title: "Beltéri színpad",
-    caption: "Esemény a közönség gyűrűjében",
-  },
-  {
-    src: "/photos/karacsonyi.jpg",
+    src: "/photos/unnepi.jpg",
     alt: "Énekesnő ünnepi díszlet előtt, karácsonyfa mellett lép fel.",
-    width: 959,
-    height: 1600,
+    width: 1079,
+    height: 1800,
     category: "esemeny",
     title: "Ünnepi fellépés",
     caption: "Különleges esemény, személyes hangulat",
@@ -184,12 +178,12 @@ export const photos: Photo[] = [
 ];
 
 export const featuredPhotos = [
-  "byealex",
-  "fesztival",
-  "lila",
-  "szin",
-  "duett",
-  "lezerek",
+  "feher-feny",
+  "kozonseg",
+  "lila-feny",
+  "zold-fenyek",
+  "voros-feny",
+  "szabadteri",
 ].map((key) => photos.find((photo) => photo.src.endsWith(`${key}.jpg`))!);
 
 export const services = [
@@ -203,7 +197,7 @@ export const services = [
     num: "02",
     title: "Eseményfotózás rendezvényeken",
     text: "Eseményfotózás során a legfontosabb pillanatokat, a résztvevők érzelmeit és hangulatát kreatív módon örökítem meg.",
-    image: photos[11],
+    image: photos[13],
   },
   {
     num: "03",
@@ -217,22 +211,22 @@ export const works = [
   {
     title: "Nyári fesztivál hangulatok",
     text: "A nyári fesztivál hangulatokban keveredik a szabadság érzése a zenével, a színes fényekkel és a hajnalig tartó önfeledt tánccal.",
-    image: photos[4],
+    image: photos[7],
   },
   {
     title: "Klubkoncert energikus pillanatok",
     text: "A klubkoncerten az energikus pillanatokban a lüktető ritmus, a fények és a közönség felszabadult hangulata egyetlen sodró élménnyé olvad össze.",
-    image: photos[8],
+    image: photos[10],
   },
   {
     title: "Szabadtéri rendezvény esték",
     text: "A szabadtéri rendezvény esték varázslatos hangulatot teremtenek, ahol a vendégek a szabad ég alatt élvezhetik a programokat és a finom ételeket.",
-    image: photos[5],
+    image: photos[6],
   },
   {
     title: "Intim akusztikus fellépések",
     text: "Az intim akusztikus fellépések közel hozzák az előadót a közönséghez, személyes, őszinte hangulatot teremtve.",
-    image: photos[11],
+    image: photos[13],
   },
 ];
 

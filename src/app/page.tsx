@@ -55,7 +55,7 @@ export default function HomePage() {
           </div>
           <div className="relative min-h-[78vw] sm:min-h-[420px] lg:min-h-full">
             <Image
-              src="/photos/byealex.jpg"
+              src="/photos/feher-feny.jpg"
               alt="Énekes a színpadon, fehér fénycsóvák előtt."
               fill
               priority
@@ -91,7 +91,7 @@ export default function HomePage() {
               alt={portrait.alt}
               fill
               sizes="(min-width: 1024px) 40vw, 100vw"
-              className="object-cover object-[center_30%] transition duration-700 group-hover:scale-[1.04]"
+              className="object-cover object-[center_38%] transition duration-700 group-hover:scale-[1.04]"
             />
             <p className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy/80 to-transparent px-5 py-5 font-display text-2xl text-white">
               {site.photographer}
@@ -100,8 +100,8 @@ export default function HomePage() {
           <div className="animate-float absolute -right-2 -bottom-6 hidden w-36 overflow-hidden rounded-3xl border-4 border-mist bg-navy sm:block md:w-44">
             <div className="relative aspect-[4/3]">
               <Image
-                src="/photos/fesztival.jpg"
-                alt="Fesztiválközönség a színpad előtt, alkonyati fényben."
+                src="/photos/kozonseg.jpg"
+                alt="Fesztiválközönség a zöld színpad előtt, kék ég alatt."
                 fill
                 sizes="180px"
                 className="object-cover"

@@ -45,7 +45,7 @@ const jsonLd = {
   name: site.name,
   description: site.lead,
   email: site.email,
-  image: "/photos/byealex.jpg",
+  image: "/photos/feher-feny.jpg",
   areaServed: site.area,
   address: {
     "@type": "PostalAddress",

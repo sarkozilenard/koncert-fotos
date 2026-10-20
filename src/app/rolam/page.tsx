@@ -36,7 +36,7 @@ export default function AboutPage() {
               fill
               priority
               sizes="(min-width: 1024px) 45vw, 100vw"
-              className="object-cover object-[center_20%] transition duration-700 group-hover:scale-[1.03]"
+              className="object-cover object-[center_38%] transition duration-700 group-hover:scale-[1.03]"
             />
             <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy via-navy/40 to-transparent px-6 py-6 text-white">
               <p className="font-display text-3xl">{site.photographer}</p>
